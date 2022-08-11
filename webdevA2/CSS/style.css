@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Century Gothic';
+    color:white;
+}
+
+.home-bg {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../IMAGE/Motorcycles.jpg);
+    background-color: black;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.intro-bg {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/intro-bg.jpg);
+    background-color: black;
+    height: 100vh;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.edu-bg {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/edu-bg.jpg);
+    background-color: black;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.hobby-bg {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/hobby-bg.jpg);
+    background-color: black;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.box1{
+    height: auto;
+}
+.box2{
+    height: auto;
+}
+
+.box3 {
+    height: auto;
+}
+
+.navbar ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+.navbar ul li.active a {
+    background-color: white;
+    color: black;
+}
+
+.logo img{
+    float: left;
+    width: auto;
+    height: 75px;
+}
+
+.main {
+    max-width: 1200px;
+    margin: auto;
+    height: 75px;
+}
+
+.title {
+    text-align: center;
+    margin-top: 15%;
+    color: white;
+    font-size: 40px;
+}
+
+.button {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    border: 1px solid white;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+header {
+    text-align: center;
+    max-width: 700px;
+    margin-left: 600px;
+    font-size: 20px;
+}
+
+.intro{
+    float: right;
+    max-width: 500px;
+    margin-top: 250px;
+    margin-right: 200px;
+    text-align:center;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.edu {
+    float: left;
+    max-width: 500px;
+    margin-top: 200px;
+    margin-left: 200px;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.content {
+    text-align: center;
+    max-width: 700px;
+    margin-left: 600px;
+    font-size: 20px;
+}
+
+#image1 {
+    border: 1px white solid;
+    margin: 10px;
+    box-shadow: 3px 3px 5px black;
+}
+
+#gameplay {
+    border: 1px white solid;
+    margin: 10px;
+    box-shadow: 3px 3px 5px black;
+}
+
+.image-gallery{
+    width: 90%;
+    margin: 20px auto 20px auto;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.pic{
+    position: relative;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px black;
+}
+
+.pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+h1{
+    margin: 20px auto 20px auto;
+}
