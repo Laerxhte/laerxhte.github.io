@@ -1,16 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="CSS/style.css">
-        <script src="JS/cpy.js" defer></script>
-        <title>Document</title>
-    </head>
-    <body>  
-        <h1>How Motorcycles Work</h1>
-        <img class="ani2" src="IMAGE/Motorcycles.jpg">
-        <h1>Im from the future</h1>
-    </body>
+<html lang="en" class="HMW-main">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02_Fazly_213878N_A2</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/cpy.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Motorcycles</a>
+        <ul class = "navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#HMW">How Motorcycles Work</a></li>
+            <li><a href="TypesOfMotors.html">Types Of Motorcycles</a></li>
+            <li><a href="MyMotorJourney.html">My Personal Motorcycle Journey</a></li>
+        </ul>
+    </header>
+    <section class="HMW" id="HMW">
+        <div class="row">
+            <div class="col50">
+                <h2 class="titleText">How Motorcycles Work</h2>
+                <p>this is just a paragraph</p>
+            </div>
+            <div class="col50">
+                <div class="img">
+                    <img src="IMAGE/Workshop.jpg">
+                </div>
+                <h2>How Motorcycles Work</h2>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+    </script>
+</body>
 </html>
