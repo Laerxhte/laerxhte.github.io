@@ -31,7 +31,8 @@ body
     background-size: cover;
 }
 
-.HMW {
+.HMW 
+{
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -121,27 +122,6 @@ header
     transition: 0.5s;
 }
 
-/* .HMW-main header
-{
-    color: #111;
-    padding: 10px 100px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-} */
-
-/*.HMW-main header .navigation li a
-{
-    text-decoration: none;
-    color: #111;
-    font-weight: 300;
-}
-
-.HMW-main header.sticky .navigation li a
-{
-    text-decoration: none;
-    color: white;
-    font-weight: 300;
-}*/
-
 .TOM-main header .navigation li a {
     text-decoration: none;
     color: #111;
@@ -171,13 +151,14 @@ header.sticky
     color: #111;
 } */
 
-header .logo {
+header .logo 
+{
     width: 50px;
     height: 50px;
     margin: 0;
     color: white;
-    //font-weight: 700;
-    //font-size: 2em;
+    font-weight: 700;
+    font-size: 2em;
     text-decoration: none;
 }
 
@@ -313,6 +294,11 @@ section
 
     header .navigation.active
     {
+        
+    }
+
+    header .navigation.active
+    {
         width: 100%;
         height: calc(100% - 60px);
         position: fixed;
@@ -323,11 +309,11 @@ section
         align-items: center;
         flex-direction: column;
         background: #111;
+        font-size: 2em;
     }
 
     .TOM-main header .navigation.active
     {
-
         width: 100%;
         height: calc(100% - 60px);
         position: fixed;
