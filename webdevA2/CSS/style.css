@@ -31,8 +31,25 @@ body
     background-size: cover;
 }
 
+.journey {
+
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #111;
+    background-size: cover;
+}
+
 .banner .MenuContent
 {
+    max-width: 900px;
+    text-align: center;
+}
+
+.journey .MenuContent {
     max-width: 900px;
     text-align: center;
 }
@@ -43,7 +60,18 @@ body
     color: white;
 }
 
+.journey .MenuContent h2 {
+    font-size: 5em;
+    color: white;
+}
+
 .banner .MenuContent p
+{
+    font-size: 1em;
+    color: white;
+}
+
+.journey .MenuContent p 
 {
     font-size: 1em;
     color: white;
@@ -82,19 +110,43 @@ header
     transition: 0.5s;
 }
 
-header
+/* .HMW-main header
 {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 40px 100px;
-    z-index: 10000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.5s;
+    color: #111;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+} */
+
+.HMW-main header .navigation li a
+{
+    text-decoration: none;
+    color: #111;
+    font-weight: 300;
 }
+
+.HMW-main header.sticky .navigation li a
+{
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
+
+.TOM-main header .navigation li a {
+    text-decoration: none;
+    color: #111;
+    font-weight: 300;
+}
+
+.TOM-main header.sticky .navigation li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
+
+/*.TOM-main
+{
+    background-color: #111;
+}*/
 
 header.sticky
 {
@@ -108,17 +160,14 @@ header.sticky
     color: #111;
 } */
 
-header .logo
-{
+header .logo {
+    width: 50px;
+    height: 50px;
+    margin: 0;
     color: white;
-    font-weight: 700;
-    font-size: 2em;
+    //font-weight: 700;
+    //font-size: 2em;
     text-decoration: none;
-}
-
-header .logo
-{
-
 }
 
 header .navigation
@@ -161,7 +210,7 @@ section
 .row .col50
 {
     position: relative;
-    width: 50%;
+    width: 48%;
 }
 
 .titleText
@@ -171,14 +220,14 @@ section
     font-weight: 300;
 }
 
-.row .col50 .img
+.row .col50 .imgBx
 {
     position: relative;
     width: 100%;
     height: 100%;
 }
 
-.row .col50 .img img
+.row .col50 .imgBx img
 {
     position: absolute;
     top: 0;
@@ -186,4 +235,147 @@ section
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.title
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.TOM .content
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.TOM .content .box
+{
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.05);
+
+}
+
+.TOM .content .box .imgBx
+{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.TOM .content .box .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 1116px)
+{
+    header,
+    header.sticky
+    {
+        padding: 10px 20px;
+    }
+
+    header .navigation
+    {
+        display: none;
+    }
+
+    header .navigation.active
+    {
+        width: 100%;
+        height: calc(100% - 60px);
+        position: fixed;
+        top: 60px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #111;
+    }
+    
+    .menuToggle
+    {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(../IMAGE/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+
+    .menuToggle.active
+    {
+        background: url(../IMAGE/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    section
+    {
+        padding: 20px;
+    }
+
+    .banner .content h2
+    {
+        font-size: 3em;
+    }
+
+    .row
+    {
+        flex-direction: column;
+    }
+
+    .row .col50
+    {
+        position: relative;
+        width: 100%;
+    }
+
+    .row .col50 .imgBx
+    {
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    .TOM .content .box
+    {
+        margin: 10px;
+    }
+
+    .TOM .content .box .imgBx
+    {
+        height: 260px;
+    }
+    
+    .title
+    {
+        text-align: center;
+    }
+
+    .titleText
+    {
+        font-size: 1.8em;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+        font-weight: 300;
+        text-align: center;
+    }
 }

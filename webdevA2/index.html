@@ -11,7 +11,8 @@
 </head>
 <body>
     <header>
-        <a href="#" class="logo">Motorcycles</a>
+        <img class="logo" src="IMAGE/nyp.png">
+        <div class="menuToggle" onclick="toggleMenu();"></div>
         <ul class = "navigation">
             <li><a href="#banner">Home</a></li>
             <li><a href="HowMotorWorks.html">How Motorcycles Work</a></li>
@@ -23,30 +24,23 @@
         <div class="MenuContent">
             <h2>All About Motorcycles</h2>
             <p>Come get to know all things motorcycle!</p>
-            <a href="#" class="btn">How Motorcycles Work</a>
         </div>
     </section>
 
     <section class="HMW" id="HMW">
         <div class="row">
             <div class="col50">
-                <h2 class="titleText">How Motorcycles Work</h2>
+                <h2 class="titleText">First Motorcycle Invented</h2>
                 <p>this is just a paragraph</p>
             </div>
             <div class="col50">
                 <div class="img">
-                    <img src="#">
+                    <img src="IMAGE/FirstMotor.jpg">
                 </div>
                 <h2>How Motorcycles Work</h2>
+                <p>The first motorcycle was invented in</p>
             </div>
         </div>
     </section>
-
-    <script type="text/javascript">
-        window.addEventListener('scroll', function(){
-            const header = document.querySelector('header');
-            header.classList.toggle("sticky", window.scrollY > 0);
-        });
-    </script>
 </body>
 </html>

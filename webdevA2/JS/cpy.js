@@ -1,16 +1,13 @@
-// let d = new Date();
-// window.alert("Today's date is " + d);
-// document.write("hey hey what"); 
-// function writeHello(selector, text){
-//     var introBox = document.querySelector(selector);
+window.addEventListener('scroll', function(){
+    const header = document.querySelector('header');
+    header.classList.toggle("sticky", window.scrollY > 0);
+});
 
-//     var pElement = document.createElement("h1");
-
-//     var txt = document.createTextNode(text);
-//     pElement.appendChild(txt);
-
-//     introBox.appendChild(pElement);
-// }
-
-// writeHello(".box2", "IT'S ALL ABOUT MOTORCYCLES");
+function toggleMenu()
+{
+    const menuToggle = document.querySelector('.menuToggle');
+    const navigation = document.querySelector('.navigation');
+    menuToggle.classList.toggle('active');
+    navigation.classList.toggle('active');
+}
 

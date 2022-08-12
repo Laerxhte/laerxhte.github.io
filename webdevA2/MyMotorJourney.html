@@ -10,42 +10,20 @@
 </head>
 <body>
     <header>
-        <a href="#" class="logo">Motorcycles</a>
-        <ul class = "navigation">
-            <li><a href="#banner">Home</a></li>
-            <li><a href="#HMW">How Motorcycles Work</a></li>
-            <li><a href="#TOM">Types Of Motorcycles</a></li>
+        <img class="logo" src="IMAGE/nyp.png">
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="HowMotorWorks.html">How Motorcycles Work</a></li>
+            <li><a href="TypesOfMotors.html">Types Of Motorcycles</a></li>
             <li><a href="#MPMJ">My Personal Motorcycle Journey</a></li>
         </ul>
     </header>
-    <section class="banner" id="banner">
+    <section class="jouney" id="jouney">
         <div class="MenuContent">
-            <h2>All About Motorcycles</h2>
-            <p>Come get to know all things motorcycle!</p>
-            <a href="#" class="btn">How Motorcycles Work</a>
+            <h2>My Journey</h2>
+            <p>The Motorcycle Owning Process In Singapore</p>
         </div>
     </section>
-
-    <section class="HMW" id="HMW">
-        <div class="row">
-            <div class="col50">
-                <h2 class="titleText">How Motorcycles Work</h2>
-                <p>this is just a paragraph</p>
-            </div>
-            <div class="col50">
-                <div class="img">
-                    <img src="#">
-                </div>
-                <h2>How Motorcycles Work</h2>
-            </div>
-        </div>
-    </section>
-
-    <script type="text/javascript">
-        window.addEventListener('scroll', function(){
-            const header = document.querySelector('header');
-            header.classList.toggle("sticky", window.scrollY > 0);
-        });
-    </script>
 </body>
 </html>
